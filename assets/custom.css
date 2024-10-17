@@ -1,0 +1,5 @@
+.custom-radius,
+.custom-radius:after {
+  border-radius: 1.2rem;
+  overflow: hidden;
+}
