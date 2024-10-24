@@ -3,3 +3,112 @@
   border-radius: 1.2rem;
   overflow: hidden;
 }
+.button,
+button {
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+@media screen and (max-width: 749px) {
+  .hide-mobile {
+    display: none;
+  }
+}
+@media screen and (min-width: 750px) {
+  .hide-desktop {
+    display: none;
+  }
+}
+/* Featured collection */
+@media screen and (max-width: 749px) {
+  .featured-collection .collection__title {
+    text-align: left;
+  }
+}
+.featured-collection .collection__title {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+}
+.button-container-mobile {
+  text-align: center;
+  margin-top: 2rem;
+}
+.featured-collection .title-container .title {
+  margin-top: 0;
+}
+@media screen and (min-width: 750px) {
+  .featured-collection .collection__title {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 750px) {
+  .featured-collection .title-container {
+    text-align: left;
+    flex: 1 1 auto;
+    .title {
+      margin-top: 0;
+    }
+  }
+  .featured-collection .button-container {
+    text-align: left;
+    flex: 0 0 auto;
+  }
+}
+.featured-collection .background-color {
+  padding: 3.2rem 1.6rem;
+  border-radius: 1.2rem;
+}
+@media screen and (min-width: 750px) {
+  .featured-collection .background-color {
+    padding: 3.2rem 3.2rem;
+  }
+}
+/* Product card */
+.product-card-wrapper .card .card__inner {
+  border-radius: 0.8rem;
+  overflow: hidden;
+}
+.product-card-wrapper .card .card__information .card__heading {
+  font-weight: 400;
+  padding-bottom: 0.3rem;
+  font-size: 1.4rem;
+}
+.product-card-wrapper .card .card__information .price .price__regular,
+.product-card-wrapper .card .card__information .price .price-item--sale {
+  font-weight: 600;
+}
+.product-card-wrapper .card .card__information .price {
+  letter-spacing: 0;
+}
+.product-card-wrapper .card .card__information .price .price-item {
+  font-size: 1.6rem;
+}
+@media screen and (min-width: 750px) {
+  .product-card-wrapper .card .card__information {
+    display: flex;
+    gap: 0.8rem;
+  }
+  .product-card-wrapper .card .card__information .card__heading {
+    flex: 1 1 auto;
+    line-height: 22px;
+  }
+  .product-card-wrapper .card .card__information .card-information {
+    flex: 0 0 auto;
+    width: auto;
+  }
+  .product-card-wrapper .card .card__information .card-information .price {
+    margin-top: 0 !important;
+  }
+  .product-card-wrapper .card .card__information .price .price-item {
+    margin-right: 0.5rem;
+  }
+  .product-card-wrapper .card .card__information .price .price__sale {
+    flex-direction: column;
+  }
+}
+.badge {
+  text-transform: uppercase;
+  padding: 0.5rem 1rem 0.4rem 1rem;
+}
