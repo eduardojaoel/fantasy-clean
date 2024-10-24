@@ -102,6 +102,7 @@
         "columns_desktop": 4,
         "full_width": false,
         "show_view_all": true,
+        "view_all_label": "Explorar todo",
         "enable_desktop_slider": false,
         "color_scheme": "scheme-2",
         "image_ratio": "adapt",
@@ -115,9 +116,61 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "fn_slideshow_83RUby": {
+      "type": "fn-slideshow",
+      "blocks": {
+        "slide_6LfPa6": {
+          "type": "slide",
+          "settings": {
+            "heading": "Image slide",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 20,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_aUUEwK": {
+          "type": "slide",
+          "settings": {
+            "heading": "Image slide",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 20,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_6LfPa6",
+        "slide_aUUEwK"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "medium",
+        "slider_visual": "dots",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "accessibility_info": "Slideshow about our brand",
+        "color_scheme": ""
+      }
     }
   },
   "order": [
+    "fn_slideshow_83RUby",
     "image_banner",
     "cs_image_banner_zVzktw",
     "featured_collection_7U6cAb"

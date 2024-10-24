@@ -1,0 +1,167 @@
+:root {
+  --menu-spacing: 0.75rem;
+}
+.fn-header-section {
+  width: 100%;
+}
+.fn-header-section .header-wrapper {
+  background-color: transparent;
+}
+.fn-header {
+  display: grid;
+  align-items: center;
+  border-radius: 1.2rem;
+  box-shadow: 0px 20px 120px 0px hsla(0, 0%, 0%, 0.15);
+  padding: 0.8rem 1.6rem;
+}
+.fn-header .primary-menu.header__inline-menu {
+  margin-left: calc(var(--menu-spacing) * -1);
+}
+.fn-header .secondary-menu.header__inline-menu {
+  transition: opacity 0.8s cubic-bezier(0.5, 0, 0, 1), visibility 0.8s cubic-bezier(0.5, 0, 0, 1);
+}
+.fn-header summary.list-menu__item {
+  padding-right: 1.2rem;
+}
+.fn-header .list-menu__item,
+.fn-header .list-menu__item > span {
+  text-decoration: none !important;
+}
+.fn-header .header__menu-item {
+  color: rgb(var(--color-foreground));
+  padding: var(--menu-spacing);
+}
+.fn-header .header__menu-item:hover,
+.fn-header .header__menu-item:hover > * {
+  color: rgba(var(--color-foreground), 0.75) !important;
+}
+.fn-header-section.scrolled-header .fn-header .header__icon:hover .icon,
+.fn-header-section.scrolled-header .fn-header .modal__close-button:hover .icon {
+  color: rgba(var(--color-foreground), 0.75);
+}
+.fn-header .secondary-menu {
+  margin-left: 0;
+}
+.fn-header .fn-logo {
+  padding: 0 1rem;
+}
+.fn-header .fn-logo svg {
+  overflow: visible;
+  max-width: 100%;
+}
+@media screen and (max-width: 479px) {
+  .fn-header .fn-logo svg {
+    width: 16rem;
+  }
+}
+.fn-header .header__heading-logo-wrapper {
+  display: flex;
+}
+.fn-header .menu-side {
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+.fn-header .icons-side {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 1rem;
+  z-index: 1;
+}
+.fn-header .icons-side .list-menu {
+  justify-content: end;
+  align-items: center;
+}
+.fn-header-section .header__heading-logo-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.fn-header-section .fn-logo-index {
+  position: absolute;
+  width: calc(100% - 10rem);
+  top: calc(100% + 3rem);
+  color: #fff;
+  will-change: top, transform;
+  transform-origin: center;
+  transition: top 0.8s cubic-bezier(0.5, 0, 0, 1), transform 0.8s cubic-bezier(0.5, 0, 0, 1);
+  transform: translate(-50%, 0%);
+  left: 50%;
+}
+@media screen and (max-width: 749px) {
+  .fn-header-section .fn-logo-index {
+    position: absolute;
+    width: calc(100% - 3rem);
+  }
+}
+.fn-header-section.scrolled-header .fn-logo-index {
+  top: 50%;
+  left: 50%;
+  color: #000;
+  transform: translate(-50%, -50%);
+}
+.fn-header-section .fn-logo-index svg {
+  will-change: width;
+  transition: width 0.8s cubic-bezier(0.5, 0, 0, 1), color 0.8s cubic-bezier(0.5, 0, 0, 1);
+}
+.fn-header-section .fn-logo.fn-logo-index a {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.header-button {
+  font-size: 1.3rem;
+  min-height: calc(3.8rem + var(--buttons-border-width) * 2);
+  min-width: auto;
+  padding: 0 2rem;
+  margin: 0 1rem;
+}
+.icons-side ul li:first-child .header-button {
+  margin-left: 0;
+}
+.icons-side ul li:last-child .header-button {
+  margin-right: 0;
+}
+
+/* Icons */
+.header__icon--cart .icon,
+.header__icons .icon {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.fn-header-section:not(.scrolled-header) .header__inline-menu {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.8s cubic-bezier(0.5, 0, 0, 1), visibility 0.8s cubic-bezier(0.5, 0, 0, 1);
+}
+@media screen and (max-width: 1349px) {
+  .fn-header-section .fn-header {
+    grid-template-columns: 1fr 1fr;
+  }
+  .fn-logo-filler {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 749px) {
+  .fn-header-section.scrolled-header .fn-logo.fn-logo-index svg {
+    width: 180px;
+  }
+  .fn-header-section.scrolled-header .fn-logo-index {
+    top: 50%;
+    left: 5.8rem;
+    color: #000;
+    transform: translate(0, -50%);
+  }
+}
+@media screen and (max-width: 450px) {
+  .fn-header-section.scrolled-header .fn-logo.fn-logo-index svg {
+    width: 160px;
+  }
+  .fn-header-section.scrolled-header .fn-logo-index {
+    left: 4rem;
+  }
+  .heart-wrapper,
+  .header__search {
+    display: none !important;
+  }
+}

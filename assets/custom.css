@@ -18,6 +18,20 @@ button {
     display: none;
   }
 }
+/* Header */
+.link,
+.customer a {
+  font-size: 1.3rem;
+}
+/* Header */
+.fn-logo svg {
+  overflow: visible;
+}
+.highlighted-link,
+.highlighted-link:hover {
+  color: #bc2323;
+}
+
 /* Featured collection */
 @media screen and (max-width: 749px) {
   .featured-collection .collection__title {
